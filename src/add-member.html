@@ -9,15 +9,15 @@
 		<title>Casa Cafe | Our Member</title>
 	</head>
 	<body>
-		<div id="app">
+		<div id="app" class="h-screen flex flex-col">
 			<!-- Navbar -->
 			<header class="navbar container mx-auto bg-base-100">
 				<div class="flex-1">
-					<a class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
+					<a href="/index.html" class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
 				</div>
 				<nav class="flex-none">
 					<ul class="menu menu-horizontal px-1">
-						<li><a>All Coffee</a></li>
+						<li><a href="/src/all-coffee.html">All Coffee</a></li>
 						<!-- <li tabindex="0">
 							<a>
 								Parent
@@ -38,40 +38,44 @@
 								<li><a>Submenu 2</a></li>
 							</ul>
 						</li> -->
-						<li><a>Members</a></li>
+						<li><a href="/src/member.html">Members</a></li>
 						<li><a>About Us</a></li>
 					</ul>
 				</nav>
 			</header>
 
-			<section class="mt-8 container mx-auto">
+			<section class="mt-8 container mx-auto grow">
 				<h2 class="text-center text-3xl font-bold">Add A New Member</h2>
 				<form class="max-w-lg mx-auto flex flex-col items-center mt-6">
 					<div class="form-control w-full max-w-xs">
 						<label class="label"> Name </label>
 						<input
+							id="name"
 							type="text"
 							placeholder="Type here"
 							class="input input-bordered w-full max-w-xs"
+							required
 						/>
 					</div>
 					<div class="form-control w-full max-w-xs">
-						<label class="label"> Email </label>
+						<label class="label"> Job Title </label>
 						<input
+							id="job"
 							type="text"
 							placeholder="Type here"
 							class="input input-bordered w-full max-w-xs"
+							required
 						/>
 					</div>
 					<div class="mt-4">
 						<input
 							type="file"
-							class="file-input file-input-bordered file-input-sm w-full max-w-xs"
+							class="file-input file-input-bordered w-full max-w-xs"
 						/>
 					</div>
 
 					<div class="flex justify-center mt-4">
-						<button class="btn btn-sm">Save</button>
+						<button id="submit-btn" class="btn btn-sm">Save</button>
 					</div>
 				</form>
 			</section>
@@ -140,6 +144,7 @@
 				</div>
 			</footer>
 		</div>
-		<script type="module" src="/main.js"></script>
+		<script type="module" src="../main.js"></script>
+		<script type="module" src="./add-member.js"></script>
 	</body>
 </html>

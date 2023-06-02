@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .feature-card {
+        @apply card w-96 bg-base-100 shadow-xl rounded-md
+    }
+
+    .pick-card {
+        @apply card w-96 bg-base-100 shadow-xl image-full
+    }
+
+    .badge-btn {
+        @apply px-4 py-1 bg-base-200 text-gray-500 font-semibold rounded-full shadow-sm hover:text-gray-400 hover:bg-base-300
+    }
+}
+
 
 h1,
 h2,

@@ -8,16 +8,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Casa Cafe | Our Member</title>
 	</head>
-	<body>
-		<div id="app">
+	<body class="h-screen flex flex-col">
+		
 			<!-- Navbar -->
 			<header class="navbar container mx-auto bg-base-100">
 				<div class="flex-1">
-					<a class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
+					<a href="/index.html" class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
 				</div>
 				<nav class="flex-none">
 					<ul class="menu menu-horizontal px-1">
-						<li><a>All Coffee</a></li>
+						<li><a href="/src/all-coffee.html">All Coffee</a></li>
 						<!-- <li tabindex="0">
 							<a>
 								Parent
@@ -38,13 +38,13 @@
 								<li><a>Submenu 2</a></li>
 							</ul>
 						</li> -->
-						<li><a>Members</a></li>
+						<li><a href="/src/member.html">Members</a></li>
 						<li><a>About Us</a></li>
 					</ul>
 				</nav>
 			</header>
 
-			<section class="mt-8">
+			<section class="mt-8 grow">
 				<h1 class="text-center text-4xl font-bold">Our Members</h1>
 				<div class="container mx-auto">
 					<!-- Member Card Container -->
@@ -130,7 +130,6 @@
 					</a>
 				</div>
 			</footer>
-		</div>
-		<script type="module" src="/main.js"></script>
+		<script type="module" src="../main.js"></script>
 	</body>
 </html>
